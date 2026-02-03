@@ -1,4 +1,4 @@
-import nltk
+# ---------- TASK 2: LEVENSHTEIN DISTANCE ----------
 
 def levenshtein_distance(word1, word2):
     m, n = len(word1), len(word2)
@@ -21,3 +21,12 @@ def levenshtein_distance(word1, word2):
                 )
 
     return dp[m][n]
+
+# ---------- MAIN ----------
+print("----- TASK 2: LEVENSHTEIN DISTANCE -----")
+word1 = "start"
+word2 = "stare"
+
+print("Word 1:", word1)
+print("Word 2:", word2)
+print("Levenshtein Distance:", levenshtein_distance(word1, word2))
